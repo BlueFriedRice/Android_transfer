@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "912966420676",
+    "firebase_url": "https://seoul-transfer-plus.firebaseio.com",
+    "project_id": "seoul-transfer-plus",
+    "storage_bucket": "seoul-transfer-plus.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:912966420676:android:926dd988a9f61f5cda2191",
+        "android_client_info": {
+          "package_name": "com.example.transfer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "912966420676-6sfbngujehamo8apc60cerpqkh7a94i3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.transfer",
+            "certificate_hash": "5e3d55d44d3a8f519d5d05a76e15226eaa3fed2f"
+          }
+        },
+        {
+          "client_id": "912966420676-nd4f9tagslfh8dsfl5o5bf9pvrstlmo6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXu0Ryb4y_AND6Lpkh56CY0nYDCdwncuw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "912966420676-nd4f9tagslfh8dsfl5o5bf9pvrstlmo6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

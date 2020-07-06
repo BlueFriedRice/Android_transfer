@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/setToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/tool_gradient"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <TextView
+            android:id="@+id/settoolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="23dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="toolbar"
+            android:fontFamily="@font/hoonddukbokki"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      android:weightSum="1">
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="15dp"
+          android:textColor="#73bcf3"
+          android:textStyle="bold"
+          android:layout_marginTop="10dp"
+          android:textSize="20dp"
+      android:text="푸시알림 진동설정"/>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@drawable/linearcolorborder"
+          android:orientation="horizontal"
+          android:weightSum="0.8"
+          android:gravity="center"
+          android:layout_weight="0.2">
+
+          <LinearLayout
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="0.4"
+              android:layout_marginLeft="15dp"
+              android:orientation="vertical">
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="알람 ON / OFF"
+              android:fontFamily="@font/hoonddukbokki"
+              android:textStyle="bold"
+              android:textSize="20dp"
+              android:gravity="center" />
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="5dp"
+                  android:fontFamily="@font/hoonddukbokki"
+                  android:gravity="left"
+                  android:text="'알림ON'설정시"
+                  android:textSize="15dp" />
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:fontFamily="@font/hoonddukbokki"
+                  android:gravity="left"
+                  android:text="최초설정값은 알림종료 5분 전 진동입니다"
+                  android:textSize="15dp" />
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="10dp"
+                  android:fontFamily="@font/hoonddukbokki"
+                  android:gravity="left"
+                  android:text="'알림OFF'설정시 알림시작 및 종료진동만 있습니다."
+                  android:textSize="15dp" />
+
+
+          </LinearLayout>
+
+          <Switch
+              android:id="@+id/on_off"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="0.3"
+              android:gravity="center" />
+
+          <View
+              android:layout_width="0dp"
+              android:layout_height="0dp"
+              android:layout_weight="0.1"
+              />
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="0.1"
+          android:background="@drawable/linearborder"
+          android:gravity="center"
+          android:orientation="horizontal"
+          android:weightSum="0.8">
+
+          <LinearLayout
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="0.4"
+              android:layout_marginLeft="15dp"
+              android:gravity="center"
+              android:orientation="vertical">
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:fontFamily="@font/hoonddukbokki"
+                  android:textColor="@android:color/black"
+                  android:layout_gravity="left"
+                  android:text="5분 전 알림"
+                  android:textSize="18dp" />
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="5dp"
+                  android:fontFamily="@font/hoonddukbokki"
+                  android:gravity="left"
+                  android:text="타이머 종료 5분 전 알림을 받습니다."
+                  android:textSize="15dp" />
+
+          </LinearLayout>
+
+          <Switch
+              android:id="@+id/alarm_5"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="0.3"
+              android:gravity="center" />
+
+          <View
+              android:layout_width="0dp"
+              android:layout_height="0dp"
+              android:layout_weight="0.1"
+              />
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:background="@drawable/linearborder"
+          android:gravity="center"
+          android:layout_weight="0.1"
+          android:weightSum="0.8">
+
+          <LinearLayout
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="0.4"
+              android:layout_marginLeft="15dp"
+              android:gravity="center"
+              android:orientation="vertical">
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="10분 전 알림"
+                  android:fontFamily="@font/hoonddukbokki"
+                  android:textSize="18dp"
+                  android:textColor="@android:color/black"
+                  android:layout_gravity="left"
+                  />
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="5dp"
+                  android:fontFamily="@font/hoonddukbokki"
+                  android:gravity="left"
+                  android:text="타이머 종료 10분 전 알림을 받습니다."
+                  android:textSize="15dp" />
+
+          </LinearLayout>
+
+          <Switch
+              android:id="@+id/alarm_10"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="0.3"
+              android:gravity="center" />
+
+          <View
+              android:layout_width="0dp"
+              android:layout_height="0dp"
+              android:layout_weight="0.1"
+              />
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@drawable/linearborder"
+          android:orientation="horizontal"
+          android:gravity="center"
+          android:layout_weight="0.1"
+          android:weightSum="0.8">
+
+          <LinearLayout
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="15dp"
+              android:layout_weight="0.4"
+              android:gravity="center"
+              android:orientation="vertical">
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="15분 전 알림"
+                  android:textSize="18dp"
+                  android:fontFamily="@font/hoonddukbokki"
+                  android:layout_gravity="left"
+                  android:textColor="@android:color/black"
+                  android:layout_weight="0.4"/>
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="5dp"
+                  android:fontFamily="@font/hoonddukbokki"
+                  android:gravity="left"
+                  android:text="타이머 종료 15분 전 알림을 받습니다."
+                  android:textSize="15dp" />
+
+          </LinearLayout>
+
+          <Switch
+              android:id="@+id/alarm_15"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="0.3"
+              android:gravity="center"/>
+
+          <View
+              android:layout_width="0dp"
+              android:layout_height="0dp"
+              android:layout_weight="0.1"
+              />
+
+      </LinearLayout>
+
+  </LinearLayout>
+
+</LinearLayout>
