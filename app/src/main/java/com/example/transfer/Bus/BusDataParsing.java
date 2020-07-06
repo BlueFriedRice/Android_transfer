@@ -111,7 +111,7 @@ public class BusDataParsing extends AppCompatActivity {
         @Override
         protected String doInBackground(String... strings) {
 
-            requestUrl = "http://ws.bus.go.kr/api/rest/stationinfo/getStationByUid?ServiceKey=GjdIwfcvrDPiLi%2Fdad5a6bsOoh%2FRE%2FRvDiR5ravDriKHDoZgebXYkVmqRS%2BHYcP1FoE2wLk8VocHZLQrL45TbA%3D%3D&arsId=" + busId;
+            requestUrl = "requestUrl" + busId;
             try {
                 boolean b_stnNm = false;
                 boolean b_rtNm =false;
